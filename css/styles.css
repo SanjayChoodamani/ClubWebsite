@@ -123,6 +123,11 @@ body::-webkit-scrollbar {
 }
 
 @media(max-width: 470px) {
+  .logo img{
+    height: 75px;
+    width: 75px;
+  }
+
   .drop-down {
     position: absolute;
     right: 10%;
@@ -131,6 +136,9 @@ body::-webkit-scrollbar {
   .menu-screen p {
     display: none;
   }
+  .hero-section p{
+    font-size: 0.75rem;
+  }
 }
 
 @media(max-width: 770px) {
@@ -138,6 +146,9 @@ body::-webkit-scrollbar {
     position: absolute;
     right: 10%;
     top: 4%;
+  }
+  .hero-section p{
+    font-size: 0.75rem;
   }
 }
 .menu-screen {
@@ -379,3 +390,11 @@ footer a{
 .space{
   margin: 10px;
 }
+
+/*clickable links*/
+.boxes a, .boxes a:visited{
+  text-decoration: none;
+  color: white;
+}
+
+
