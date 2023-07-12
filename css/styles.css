@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'ag-light';
-  src: url(../fonts/AG\ Foreigner\ Light-Plain\ Medium.ttf);
+  src: url(./fonts/AG\ Foreigner\ Light-Plain\ Medium.ttf);
 }
 
 @font-face {
   font-family: 'avetra';
-  src: url(../fonts/AvertaDemo-Regular.otf);
+  src: url(./fonts/AvertaDemo-Regular.otf);
 }
 
 * {
