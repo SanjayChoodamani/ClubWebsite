@@ -22,3 +22,13 @@ const observer = new IntersectionObserver((entries) => {
   
 const hiddenElements = document.querySelectorAll('.hidden') ;
 hiddenElements.forEach((el) => observer.observe(el));
+
+const footer = document.querySelector('.contact')
+footer.addEventListener('click', function () {
+  navIcon.classList.toggle('open');
+  if (menu.classList.contains('open')) {
+    menu.classList.remove('open');
+  } else {
+    menu.classList.add('open');
+  }
+})

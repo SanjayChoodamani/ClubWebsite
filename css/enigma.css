@@ -1,0 +1,73 @@
+.events-enigma {
+    margin-top: 50px;
+    font-family: 'oxygen', sans-serif;
+}
+
+.events-enigma li {
+    list-style: none;
+    margin: 10px 0px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.events-enigma li::before {
+    content: " - ";
+}
+
+.heading p {
+    color: white;
+}
+
+.enigma-heading img {
+    width: 100%;
+    height: 100dvh;
+}
+
+.enigma-heading h1 {
+    color: white;
+    font-family: 'ag-light', sans-serif;
+    display: inline;
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -20%);
+    z-index: 1;
+}
+
+.enigma-heading p {
+    color: white;
+    font-family: 'ag-light', sans-serif;
+    display: inline;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%, -15%);
+    z-index: 1;
+    font-size: 20px;
+}
+
+@media(max-width: 770px) {
+    .enigma-heading h1 {
+        left: 50%;
+        bottom: 25%;
+        transform: translate(-50%, -25%);
+    }
+
+    .enigma-heading p {
+        left: 50%;
+        bottom: 20%;
+        transform: translate(-50%, -20%);
+        font-size: 16px;
+    }
+
+}
+
+.enigma-heading i {
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    left: 50%;
+    bottom: 7%;
+    transform: translate(-50%, -7%);
+    z-index: 1;
+}

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
+
+@media(min-width: 770px) {
+    .container {
+        padding: 0px 40px;
+        grid-template-columns: repeat(3, 0.5fr);
+    }
+}
+
+.container {
+    margin: 30px 10px;
+    display: grid;
+    gap: 40px ;
+}
+
+.tech-box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px white solid;
+    border-radius: 10px;
+}
+
+.tech-box img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    object-fit: cover;
+    height: 150px;
+    width: 280px;
+    border-radius: 10px;
+}
+
+.tech-box h3 {
+    position: absolute;
+    top: 170px;
+    left: 55px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 0px 0px;
+}
+
+
+.btn,
+btn:visited {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    font-family: 'oxygen', sans-serif;
+    font-size: 25px;
+    line-height: 35px;
+    width: 280px;
+    color: #fff;
+    background-color: #081f2d;
+    padding: 10px 30px;
+    border: solid #081F2D 1px;
+    border-radius: 20px;
+    transition: 1000ms;
+    transform: translateY(0);
+    cursor: pointer;
+}
+
+.btn:hover {
+
+    transition: 1000ms;
+    padding: 10px 50px;
+    transform: translateY(-0px);
+    background-color: white;
+    color: #081f2d;
+    border: solid 1px #081F2D;
+}
