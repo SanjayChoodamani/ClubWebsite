@@ -34,7 +34,7 @@
     z-index: 1;
 }
 
-.enigma-heading p {
+.p1 {
     color: white;
     font-family: 'ag-light', sans-serif;
     display: inline;
@@ -46,18 +46,47 @@
     font-size: 20px;
 }
 
+.p2 {
+    color: white;
+    font-family: 'ag-light', sans-serif;
+    display: inline;
+    position: absolute;
+    left: 50%;
+    bottom: 11%;
+    transform: translate(-50%, -11%);
+    z-index: 1;
+    font-size: 20px;
+}
+
 @media(max-width: 770px) {
+    .enigma-heading img{
+        object-fit: cover;
+    }
     .enigma-heading h1 {
         left: 50%;
         bottom: 25%;
         transform: translate(-50%, -25%);
     }
 
-    .enigma-heading p {
-        left: 50%;
+    .p1 {
+        left: 49%;
         bottom: 20%;
-        transform: translate(-50%, -20%);
-        font-size: 16px;
+        transform: translate(-45%, -20%);
+        font-size: 15px;
+    }
+
+    .p2 {
+        left: 49%;
+        bottom: 15%;
+        transform: translate(-45%, -15%);
+        font-size: 15px;
+
+    }
+
+    .enigma-heading i {
+        left: 50%;
+        bottom: 3%;
+        transform: translate(-50%, -3%);
     }
 
 }
@@ -67,7 +96,7 @@
     font-size: 2rem;
     position: absolute;
     left: 50%;
-    bottom: 7%;
-    transform: translate(-50%, -7%);
+    bottom: 5%;
+    transform: translate(-50%, -5%);
     z-index: 1;
 }
