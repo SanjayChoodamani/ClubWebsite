@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechTalk</title>
+    <link rel="icon" type="image/x-icon" href="/images/mtclogo.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/techtalkcontent.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="logo">
+            <a href="/index.html"><img src="/images/mtclogo.png" alt="The Malnad Technical Club logo"
+                    href="/index.html"></a>
+        </div>
+        <div class="drop-down">
+            <div id="nav-icon1">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="layout">
+        <h1>Block Chain</h1>
+        <hr>
+        <img src="/images/techtalk/block-chain(2).jpg" alt="">
+        <p>Blockchain is incredibly popular nowadays. As the name indicates, a blockchain is a chain
+            of blocks that contain information. This method was originally described in 1991 by a group of researchers
+            and was originally ntended to time stamp digital documents (like a notary). It was mostly unused until it
+            was adapted by Satoshi Nakamoto in 2009 to create the digital cryptocurrency bitcoin. A block chain is a
+            distributed ledger that is completely open to anyone. Once data has been recorded inside a block chain, it
+            becomes very difficult to change it. </p>
+            <iframe src="https://www.youtube.com/embed/yubzJw0uiE4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <h3>Working of Block Chain</h3>
+            <p>In a blockchain each block contains some data, hash value of the block and hash value of the previous block. The data that is stored inside a block depends on the type of blockchain. The Bitcoin blockchain for example, stores the details about a transaction such as the sender, receiver and number of coins. A block also has a hash. You can compare a hash to a fingerprint. It identifies a block and all of its contents and it's always unique, just like a fingerprint. Once a block is created, its hash is calculated. Changing something inside the block will cause the hash to change. So, in other words: hashes are very useful when you want to detect changes to blocks. If the fingerprint of a block changes, it is no longer the same block. The third element inside each block is the hash of the previous block. This effectively creates a chain of blocks and it's this technique that makes a blockchain so secure. The first block is a bit special; it cannot point to previous blocks because it's the first one. This is the genesis block. Using hashes is not enough to prevent tampering. Computers these days are very fast and can calculate hundreds of thousands of hashes per second. You could effectively tamper with a block and recalculate all the hashes of other blocks to make your blockchain valid again. So, to mitigate this, blockchains have something called proof-of-work. It's a mechanism that slows down the creation of new blocks. But there is one more way that blockchains secure themselves and that's by being distributed. Instead of using a central entity to manage the chain, blockchains use a peer-to-peer network and anyone is allowed to join. When someone joins this network, he gets the full copy of the blockchain. The node can use this to verify that everything is still in order. When someone creates a new block, that new block is sent to everyone on the network. Each node then verifies the block to make sure that it hasn't been tampered with. If everything checks out, each node adds this block to its own blockchain. All the nodes in this network create consensus. They agree about which blocks are valid and which aren't. Blocks that are tampered with will be rejected by other nodes in the network. So, to successfully tamper with a blockchain you'll need to tamper with all blocks on the chain, redo the proof-of-work for each block and take control of more than 50% of the peer-to-peer network. Only then will your tampered block become accepted by everyone else. Blockchains are also constantly evolving. One of the more recent developments is the creation of smart contracts. These contracts are simple programs that are stored on the blockchain and can be used to automatically exchange coins based on certain conditions.</p>
+            <img src="/images/techtalk/block-chain(3).png" alt="">
+            <h3>Advantages</h3>
+            <p><strong>Distributed</strong>-Since blockchain data is often stored in thousands of devices on a distributed network of nodes, the system and the data are highly resistant to technical failures and malicious attacks. Each network node is able to replicate and store a copy of the database and, because of this, there is no single point of failure: a single node going offline does not affect the availability or security of the network.</p>
+            <p><strong>Stability-</strong>Confirmed blocks are very unlikely to be reversed, meaning that once data has been registered into the blockchain, it is extremely difficult to remove or change it.</p>
+            <p><strong>Trustless System</strong> -In most traditional payment systems, transactions are not only dependent on the two parties involved, but also on an intermediary - such as a bank, credit card company, or payment provider. When using blockchain technology, this is no longer necessary because the distributed network of nodes verify the transactions through a process known as mining. For this reason, Blockchain is often referred to as a 'trustless' system. Therefore, a blockchain system negates the risk of trusting a single organization and also reduces the overall costs and transaction fees by cutting out intermediaries and third parties.</p>
+            <h3>Disadvangtages</h3>
+            <p><strong>51% Attacks-</strong> In most traditional payment systems, transactions are not only dependent on the two parties involved, but also on an intermediary - such as a bank, credit card company, or payment provider. When using blockchain technology, this is no longer necessary because the distributed network of nodes verify the transactions through a process known as mining. For this reason, Blockchain is often referred to as a 'trustless' system. Therefore, a blockchain system negates the risk of trusting a single organization and also reduces the overall costs and transaction fees by cutting out intermediaries and third parties Despite being theoretically possible, there was never a successful 51% attack on the Bitcoin blockchain. As the network grows larger the security increases and it is quite unlikely that miners will invest large amounts of money and resources to attack Bitcoin as they are better rewarded for acting honestly. Other than that, a successful 51% attack would only be able to modify the most recent transactions for a short period of time because blocks are linked through cryptographic proofs (changing older blocks would require intangible levels of computing power). Also, the Bitcoin blockchain is very resilient and would quickly adapt as a response to an attack.</p>
+            <p><strong>Data Modification-</strong>Another downside of blockchain systems is that once data has been added to the blockchain it is very difficult to modify it. While stability is one of blockchain’s advantages, it is not always good. Changing blockchain data or code is usually very demanding and often requires a hard fork, where one chain is abandoned, and a new one is taken up.</p>
+            <p><strong>Private Keys</strong> -Blockchain uses public-key (or asymmetric) cryptography to give users ownership over their cryptocurrency units (or any other blockchain data). Each blockchain address has a corresponding private key. While the address can be shared, the private key should be kept secret. Users need their private key to access their funds, meaning that they act as their own bank. If a user loses their private key, the money is effectively lost, and there is nothing they can do about it.
+            </p>
+            <p><strong>Inefficient-</strong>Blockchains, especially those using Proof of Work, are highly inefficient. Since mining is highly competitive and there is just one winner every ten minutes, the work of every other miner is wasted. As miners are continually trying to increase their computational power, so that they have a greater chance of finding a valid block hash, the resources used by the Bitcoin network has increased significantly in the last few years, and it currently consumes more energy than many countries, such as Denmark, Ireland, and Nigeria. Storage -Blockchain ledgers can grow very large over time. The Bitcoin blockchain currently requires around 200 GB of storage. The current growth in blockchain size appears to be outstripping the growth in hard drives and the network risks losing nodes if the ledger becomes too large for individuals to download and store.</p>
+            <h3>Future Scope and Application</h3>
+            <p>- Storing medical records</p>
+            <p>- Creating a digital notary</p>
+            <p>- Collecting taxes.</p>
+            <h3>Conclusion</h3>              
+            <p>Blockchain technology is revolutionary. It will make life simpler and safer, changing the way personal information is stored and how transactions for goods and services are made. Blockchain technology creates a permanent and immutable record of every transaction. This impenetrable digital ledger makes fraud, hacking, data theft, and information-loss impossible. The technology will affect every industry in the world, including manufacturing, retail, transportation, healthcare, and real estate companies.</p>
+                
+    </div>
+    <div class="menu-screen">
+        <p>The Malnad Technical Club</p>
+        <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="/about.html">ABOUT</a></li>
+                <li><a href="/events.html">EVENTS</a></li>
+                <li><a href="/projects.html">PROJECTS</a></li>
+                <li><a href="/techtalk.html">TECHTALKS</a></li>
+                <li><a href="/enigma.html">ENIGMA</a></li>
+                <li><a href="/team.html">TEAM</a></li>
+                <li><a href="/gallery.html">GALLERY</a></li>
+                <li class="contact"><a href="#footer">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <footer class="hidden footer-css" id="footer">
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="address">
+            <p><a href="#"><i class="fa-solid fa-location-dot"></i></a> No 21, Salagame Rd,<br class="space">Rangoli
+                Halla, Hassan, <br class="space">Karnataka 573202</p>
+        </div>
+        <div class="phone-no">
+            <p><a href="#"><i class="fa-solid fa-phone"></i></a> +91 9620020541</p>
+        </div>
+        <div class="gmail">
+            <p><a href="#"><i class="fa-solid fa-envelope"></i></a> mce.techclub@gmail.com</p>
+        </div>
+        <div class="issue">
+            <p>Find an issue with this page?</p>
+            <p>Fix it on GitHub.</p>
+        </div>
+        <div class="copyright">
+            <p>Copyright <a href="#"><i class="fa-regular fa-copyright"></i></a>The Malnad Technical Club</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="/javascript/index.js"></script>
+</body>
+
+</html>
