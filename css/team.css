@@ -1,24 +1,30 @@
-.team{
+.team {
     margin: 10px;
     color: white;
     padding: 40px;
 }
-.head{
+
+.head {
     margin: 110px 20px 20px 20px;
 }
-.head h1{
+
+.head h1 {
     color: aqua;
     font-size: 3rem;
 }
-.members{
+
+.members {
     margin: 20px;
 }
-.members h1{
+
+.members h1 {
     color: aqua;
     font-size: 2.5rem;
     margin: 50px 20px 50px 0px;
 }
-.team-card, .team-card-1{
+
+.team-card,
+.team-card-1 {
     position: relative;
     width: 200px;
     height: 300px;
@@ -28,7 +34,8 @@
 
 }
 
-.team-card img, .team-card-1 img{
+.team-card img,
+.team-card-1 img {
     object-fit: cover;
     width: 100px;
     height: 150px;
@@ -39,38 +46,55 @@
     transform: translateX(-50%);
 }
 
-.team-card h2, .team-card-1 h2{
+.team-card h2,
+.team-card-1 h2 {
     position: relative;
     top: 170px;
     text-align: center;
 }
 
-.qualification{
+.qualification {
     position: relative;
     text-align: center;
     top: 175px;
     font-weight: bold;
 }
 
-.allign{
+.allign {
     margin: 20px;
     display: grid;
     gap: 20px 40px;
-    grid-template-columns: repeat(5 ,0fr);
+    justify-content: center;
 }
 
-.team-card-1 p{
+.team-card-1 p {
     position: relative;
     text-align: center;
     top: 175px;
     font-weight: bold;
 }
 
-.committee-members .team-card-1{
+.committee-members .team-card-1 {
     position: relative;
     width: 200px;
     height: 250px;
     border: 1px white solid;
     border-radius: 10px;
     font-family: 'oxygen', sans-serif;
+}
+
+.second-years .team-card-1 {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    border: 1px white solid;
+    border-radius: 10px;
+    font-family: 'oxygen', sans-serif;
+}
+
+@media (min-width: 770px) {
+    .allign {
+        
+        grid-template-columns: repeat(5, 0fr);
+    }
 }
