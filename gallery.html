@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="icon" type="image/x-icon" href="./images/mtclogo.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <style>
+        .gallery{
+            margin: 40px ;
+            display: grid;
+            gap: 40px; 
+            justify-content: center;           
+            
+        }
+        .gallery img{
+            object-fit: cover;
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+        }
+        @media(min-width: 770px){
+            .gallery{
+                grid-template-columns: repeat(2, 0.0fr);
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="logo">
+            <a href="./index.html"><img style="width: 75px; height: 75px;" src="./images/mtclogo.png"
+                    alt="The Malnad Technical Club logo" href="./index.html"></a>
+        </div>
+        <div class="drop-down">
+            <div id="nav-icon1">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="menu-screen">
+        <p>The Malnad Technical Club</p>
+        <div class="lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="./about.html">ABOUT</a></li>
+                <li><a href="./events.html">EVENTS</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">TECHTALKS</a></li>
+                <li><a href="./enigma.html">ENIGMA</a></li>
+                <li><a href="#">TEAM</a></li>
+                <li><a href="./gallery.html">GALLERY</a></li>
+                <li class="contact"><a href="#footer">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="about hidden">
+        <div class="a-head">
+            <h1>Gallery</h1>
+            <hr>
+        </div>
+        <div class="gallery hidden">
+            <img src="./images/gallery/dronenext2.jpg" alt="">
+            <img src="./images/gallery/img1.JPG" alt="">
+            <img src="./images/gallery/img2.JPG" alt="">
+            <img src="./images/gallery/img3.JPG" alt="">
+            <img src="./images/gallery/img4.jpg" alt="">
+            <img src="./images/gallery/landscape(section2,1).jpg" alt="">
+            <img src="./images/gallery/landscape(section2,2).jpg" alt="">
+            <img src="./images/gallery/landscape(section2,3).jpg" alt="">
+            <img src="./images/gallery/landscape(section3,1).jpg" alt="">
+            <img src="./images/gallery/landscape(section3,2).jpg" alt="">
+            <img src="./images/gallery/landscape(section3,3).jpg" alt="">
+            <img src="./images/gallery/landscape1,1.jpg" alt="">
+            <img src="./images/gallery/landscape1,2.JPG" alt="">
+            <img src="./images/gallery/landscape1,3.jpg" alt="">
+            <img src="./images/gallery/landscape1,4.jpg" alt="">
+        </div>
+        
+
+    </div>
+    <footer class="hidden footer-css" id="footer">
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="address">
+            <p><a href="#"><i class="fa-solid fa-location-dot"></i></a> No 21, Salagame Rd,<br class="space">Rangoli
+                Halla, Hassan, <br class="space">Karnataka 573202</p>
+        </div>
+        <div class="phone-no">
+            <p><a href="#"><i class="fa-solid fa-phone"></i></a> +91 9620020541</p>
+        </div>
+        <div class="gmail">
+            <p><a href="#"><i class="fa-solid fa-envelope"></i></a> mce.techclub@gmail.com</p>
+        </div>
+        <div class="issue">
+            <p>Find an issue with this page?</p>
+            <p>Fix it on GitHub.</p>
+        </div>
+        <div class="copyright">
+            <p>Copyright <a href="#"><i class="fa-regular fa-copyright"></i></a>The Malnad Technical Club</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./javascript/index.js"></script>
+</body>
+
+</html>
