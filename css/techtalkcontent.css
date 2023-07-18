@@ -11,8 +11,8 @@
 }
 
 .layout img{
-    width: 350px;
-    height: 250px;
+    width: 400px;
+    height: 300px;
     position: relative;
     left: 50%;
     transform: translateX(-60%);
@@ -32,9 +32,21 @@
 }
 
 .layout iframe{
-    width: 350px;
-    height: 250px;
+    width: 450px;
+    height: 350px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media(max-width: 770px){
+    .layout iframe{
+        width: 300px;
+        height: 200px;
+    }
+    .layout img{
+        width: 300px;
+        height: 200px;
+        transform: translateX(-60%);
+    }
 }

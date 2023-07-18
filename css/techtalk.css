@@ -1,4 +1,4 @@
-.tech-talk{
+.tech-talk {
     margin: 20px 20px;
     padding: 20px;
     font-family: 'oxygen', sans-serif;
@@ -8,23 +8,30 @@
     justify-content: center;
 }
 
-.topic{
+@media(min-width: 770px) {
+    .tech-talk {
+        grid-template-columns: repeat(2, 0.0fr);
+    }
+}
+
+.topic {
     position: relative;
     width: 350px;
     height: 250px;
 }
-.topic a{
+
+.topic a {
     text-decoration: none;
     color: white;
 }
 
-.topic img{
+.topic img {
     object-fit: cover;
     width: 350px;
     height: 250px;
 }
 
-.right{
+.right {
     z-index: 2;
     position: absolute;
     top: 180px;
@@ -32,7 +39,7 @@
     font-weight: bold;
 }
 
-.left{
+.left {
     z-index: 2;
     position: absolute;
     top: 180px;
