@@ -7,6 +7,7 @@
   font-family: 'avetra';
   src: url(./fonts/AvertaDemo-Regular.otf);
 }
+
 @property --angle {
   syntax: '<angle>';
   initial-value: 90deg;
@@ -24,6 +25,7 @@
   initial-value: 0%;
   inherits: true;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -34,17 +36,18 @@ body {
   padding: 0;
   background-color: rgb(8, 8, 8);
   font-family: 'ag-light', sans-serif;
-  -ms-overflow-style: none;  
-  scrollbar-width: none;  
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
 
-.hero{
+.hero {
   height: 100vh;
 }
+
 .nav-bar {
   margin-left: 10px;
   margin-right: 10px;
@@ -139,7 +142,7 @@ body::-webkit-scrollbar {
 }
 
 @media(max-width: 470px) {
-  .logo img{
+  .logo img {
     height: 75px;
     width: 75px;
   }
@@ -149,10 +152,12 @@ body::-webkit-scrollbar {
     right: 10%;
     top: 5%;
   }
+
   .menu-screen p {
     display: none;
   }
-  .hero-section p{
+
+  .hero-section p {
     font-size: 0.75rem;
   }
 }
@@ -163,10 +168,12 @@ body::-webkit-scrollbar {
     right: 10%;
     top: 4%;
   }
-  .hero-section p{
+
+  .hero-section p {
     font-size: 0.75rem;
   }
 }
+
 .menu-screen {
   display: none;
   position: fixed;
@@ -205,7 +212,7 @@ body::-webkit-scrollbar {
     opacity: 0;
     transform: translateY(-100px);
   }
-  
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -247,14 +254,17 @@ body::-webkit-scrollbar {
   animation: slideFromTop 0.5s forwards;
 }
 
-.menu a:hover{
+.menu a:hover {
   font-weight: bold;
   font-size: 1.5em;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
+
 .lines {
   position: relative;
   overflow: hidden;
@@ -262,6 +272,7 @@ body::-webkit-scrollbar {
   height: 100vh;
   margin: 0 auto;
 }
+
 .lines .line {
   position: absolute;
   width: 1px;
@@ -270,18 +281,23 @@ body::-webkit-scrollbar {
   left: 50%;
   background: rgba(255, 255, 255, 0.1);
 }
+
 .lines .line:nth-child(1) {
   margin-left: -25%;
 }
+
 .lines .line:nth-child(1)::after {
   animation-delay: 2s;
 }
+
 .lines .line:nth-child(3) {
   margin-left: 25%;
 }
+
 .lines .line:nth-child(3)::after {
   animation-delay: 2.5s;
 }
+
 .lines .line::after {
   content: "";
   display: block;
@@ -299,13 +315,14 @@ body::-webkit-scrollbar {
 @keyframes run {
   0% {
     top: -50%;
- }
+  }
+
   100% {
     top: 100%;
- }
+  }
 }
 
-.hero-section{
+.hero-section {
   color: white;
   font-family: 'ag-light', sans-serif;
   position: absolute;
@@ -315,22 +332,22 @@ body::-webkit-scrollbar {
 }
 
 /*hero section styles*/
-.hero-section h1{
+.hero-section h1 {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
-.hero-section p{
+.hero-section p {
   font-size: 1rem;
   margin-bottom: 4px;
 }
 
-.hero-section i{
+.hero-section i {
   font-size: 2rem;
 }
 
-.hero-section a{
+.hero-section a {
   text-decoration: none;
   color: white;
 }
@@ -342,19 +359,19 @@ video {
   z-index: -1;
 }
 
-.hidden{
+.hidden {
   opacity: 0;
   transition: all 1s ease;
   transform: translateY(10px);
 }
 
-.show{
+.show {
   opacity: 1;
   transform: translateY(0);
 }
 
 /*container*/
-.container{
+.container {
   margin: 20px;
   display: flex;
   justify-content: center;
@@ -364,71 +381,88 @@ video {
 }
 
 :root {
-	--d: 2500ms;
-	--angle: 90deg;
-	--gradX: 100%;
-	--gradY: 50%;
-	--c1: rgba(168, 239, 255, 1);
-	--c2: rgba(168, 239, 255, 0.1);
+  --d: 2500ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0.1);
 }
 
+@media(max-width: 770px) {
+  .what {
+    width: 90%;
+    margin: 40px 0px;
+    padding: 20px;
+    font-size: 1.5rem;
+    line-height: 50px;
+    
+  }
+}
 
-.what{
+.what {
   width: 50%;
   margin: 40px 10px;
   padding: 20px;
   font-size: 2rem;
-  line-height:60px;
+  line-height: 60px;
   border: 0.2rem solid;
   display: inline-block;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
   border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
-	animation: borderRotate var(--d) linear infinite forwards;
+  animation: borderRotate var(--d) linear infinite forwards;
 }
+
 @keyframes borderRotate {
-	100% {
-		--angle: 420deg;
-	}
+  100% {
+    --angle: 420deg;
+  }
 }
 
 @keyframes borderRadial {
-	20% {
-		--gradX: 100%;
-		--gradY: 50%;
-	}
-	40% {
-		--gradX: 100%;
-		--gradY: 100%;
-	}
-	60% {
-		--gradX: 50%;
-		--gradY: 100%;
-	}
-	80% {
-		--gradX: 0%;
-		--gradY: 50%;
-	}
-	100% {
-		--gradX: 50%;
-		--gradY: 0%;
-	}
+  20% {
+    --gradX: 100%;
+    --gradY: 50%;
+  }
+
+  40% {
+    --gradX: 100%;
+    --gradY: 100%;
+  }
+
+  60% {
+    --gradX: 50%;
+    --gradY: 100%;
+  }
+
+  80% {
+    --gradX: 0%;
+    --gradY: 50%;
+  }
+
+  100% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
 }
-.boxes{
+
+.boxes {
   font-family: 'Oxygen', sans-serif;
   display: inline;
   margin: 20px 0px;
   width: 100%;
   height: 20vh;
 }
-.boxes img{
+
+.boxes img {
   height: 20vh;
   width: 100%;
   object-fit: cover;
 }
 
-.boxes p{
+.boxes p {
   font-size: 1.5rem;
   position: absolute;
   right: 10%;
@@ -436,50 +470,56 @@ video {
 }
 
 /*footer*/
-footer{
+footer {
   color: white;
   font-family: 'avetra', sans-serif;
   text-align: center;
   margin-bottom: 20px;
 }
 
-footer a{
+footer a {
   font-size: 18px;
   text-decoration: none;
   color: white;
 }
 
-footer p{
+footer p {
   font-size: 18px;
 }
 
-.icons, .address, .phone-no, .gmail, .issue { 
+.icons,
+.address,
+.phone-no,
+.gmail,
+.issue {
   margin: 20px 0px;
 }
 
-.icons i{
+.icons i {
   margin: 20px;
   font-size: 2rem;
 }
 
-.space{
+.space {
   margin: 10px;
 }
 
-.issue a{
+.issue a {
   color: aqua;
 }
 
-.issue p{
+.issue p {
   font-size: 16px;
   font-weight: bold;
 }
 
 /*clickable links*/
-.boxes a, .boxes a:visited{
+.boxes a,
+.boxes a:visited {
   text-decoration: none;
   color: white;
 }
+
 /*Saviskaar page styles*/
 .heading img {
   object-fit: cover;
@@ -520,7 +560,10 @@ footer p{
 }
 
 /*About page styling*/
-.about, .events, .events-enigma, .techsandhya {
+.about,
+.events,
+.events-enigma,
+.techsandhya {
   color: white;
   font-family: 'oxygen', sans-serif;
   margin: 15% 7%;
@@ -547,51 +590,80 @@ hr {
   padding: 40px;
 }
 
-@media(max-width: 770px){
-  .a-head h1{
+@media(max-width: 770px) {
+  .a-head h1 {
     margin-top: 85px;
   }
-  .a-image img{
+
+  .a-image img {
     height: 25vh;
     padding: 20px;
   }
 }
 
-.p-about p{
+.p-about p {
   margin: 30px 0px 50px 0px;
   font-size: 20px;
 }
 
-.our-vision h2, .our-mission h2, .event-desc h2{
+.our-vision h2,
+.our-mission h2,
+.event-desc h2 {
   color: aqua;
   margin: 40px 0px;
   font-size: 2.5rem;
 }
 
-.our-vision p, .event-desc p{
+.our-vision p,
+.event-desc p {
   font-size: 20px;
 }
 
-.our-mission li{
+.our-mission li {
   list-style: none;
   margin: 20px 0px;
   font-size: 20px;
 
 }
 
-.our-mission li::before{
+.our-mission li::before {
   content: " - ";
 }
 
 /*event page style*/
 
-.a-head p{
+.a-head p {
   color: white;
   font-size: 20px;
   padding: 20px;
 }
 
+/*loader animation*/
+.loader{
+  background-color: #161616;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 100;
+}
 
+.loader img{
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 42%;
+  transform: translate(-50%, -42%);
+  width: 100px;
+  height: 100px;
+  animation: imageAnimation 2s infinite;
+}
 
-
+@keyframes imageAnimation{
+  from{
+    transform: scale(1.0);
+  }
+  to {
+    transform: scale(2);
+  }
+}
 
