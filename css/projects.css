@@ -48,15 +48,15 @@
     }
 
     .project-content{
-        width: 320px;
+        width: 300px;
     }
     
     .project-content img{
-        width: 290px;
+        width: 270px;
     }
 
     .project-content video{
-        width: 290px;
+        width: 270px;
     }
 
 }
