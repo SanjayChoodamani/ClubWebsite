@@ -47,6 +47,18 @@
         transform: translate(-50%, -5%);
     }
 
+    .project-content{
+        width: 320px;
+    }
+    
+    .project-content img{
+        width: 290px;
+    }
+
+    .project-content video{
+        width: 290px;
+    }
+
 }
 
 .project{
