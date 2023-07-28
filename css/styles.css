@@ -38,6 +38,8 @@ body {
   font-family: 'ag-light', sans-serif;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 body::-webkit-scrollbar {
@@ -143,8 +145,8 @@ body::-webkit-scrollbar {
 
 @media(max-width: 470px) {
   .logo img {
-    height: 75px;
-    width: 75px;
+    height: 50px;
+    width: 50px;
   }
 
   .drop-down {
@@ -181,7 +183,7 @@ body::-webkit-scrollbar {
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 0px 1px;
+  margin: 0px;
   background-color: #292929;
   z-index: 1;
   opacity: 0;
@@ -333,18 +335,19 @@ body::-webkit-scrollbar {
 
 /*hero section styles*/
 .hero-section h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
   margin-bottom: 5px;
+
 }
 
 .hero-section p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 4px;
 }
 
 .hero-section i {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .hero-section a {
@@ -370,6 +373,19 @@ video {
   transform: translateY(0);
 }
 
+@media(max-width: 770px){
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+  .hero-section i {
+    font-size: 2rem;
+  }
+  
+}
+
 /*carousel designs*/
 @keyframes scroll {
   0% {
@@ -379,12 +395,18 @@ video {
     transform: translateX(calc(-250px * 7));
  }
 }
+
+.carousel, .container{
+  scroll-snap-align: start;
+}
+
 .slider {
-  margin: 50px 0px 30px 0px ;
+  margin: 100px 0px 30px 0px ;
   height: 300px;
   overflow: hidden;
   position: relative;
   width: 100%;
+  scroll-snap-type: y mandatory;
 }
 .slider::before, .slider::after {
   content: "";
@@ -411,7 +433,6 @@ video {
 .slide img{
   height: 280px;
   width: 400px;
-  border-radius: 10px;
   margin: 0px 15px;
 }
 
@@ -424,6 +445,7 @@ video {
   text-align: center;
   flex-direction: column;
   color: white;
+  scroll-snap-type: y mandatory;
 }
 
 :root {
@@ -495,6 +517,7 @@ video {
   height: 20vh;
   width: 100%;
   object-fit: cover;
+  opacity: 0.8;
 }
 
 .boxes p {
@@ -513,13 +536,13 @@ footer {
 }
 
 footer a {
-  font-size: 18px;
+  font-size: 15px;
   text-decoration: none;
   color: white;
 }
 
 footer p {
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .icons,
@@ -544,7 +567,7 @@ footer p {
 }
 
 .issue p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -607,7 +630,7 @@ footer p {
 .a-head h1 {
   color: aqua;
   margin: 20px 0px;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 hr {
@@ -675,7 +698,7 @@ hr {
 
 /*loader animation*/
 .loader {
-  background-color: #161616;
+  background-color: #0a0a0a;
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -685,12 +708,21 @@ hr {
 .loader img {
   display: block;
   position: relative;
-  top: 50%;
+  top: 40%;
   left: 38%;
-  transform: translate(-50%, -38%);
+  transform: translate(-40%, -38%);
   width: 100px;
   height: 100px;
   animation: imageAnimation 2s infinite;
+}
+
+@media(min-width: 770px) {
+  .loader img {
+    position: relative;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -47%);
+  }
 }
 
 @keyframes imageAnimation {
