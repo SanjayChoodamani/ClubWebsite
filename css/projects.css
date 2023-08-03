@@ -1,8 +1,10 @@
-.projects-display{
+.projects-display {
     color: white;
     font-family: 'oxygen', sans-serif;
 }
-
+.project-heading{
+    scroll-snap-type: y mandatory;
+}
 .project-heading img {
     width: 100%;
     height: 100dvh;
@@ -29,8 +31,22 @@
     z-index: 1;
 }
 
+.down {
+    animation: slide-down 0.75s infinite;
+}
+
+@keyframes slide-down{
+    from{
+        transform: translate(-50%, -3%) scale(1.0);
+
+    }
+    to{
+        transform: translate(-50%, -25%) scale(1.2);
+    }
+}
+
 @media(max-width: 770px) {
-    .project-heading img{
+    .project-heading img {
         object-fit: cover;
     }
 
@@ -40,55 +56,47 @@
         transform: translate(-50%, -25%);
     }
 
-   
+
     .project-heading i {
         left: 50%;
         bottom: 5%;
         transform: translate(-50%, -5%);
     }
-
-    .project-content{
-        width: 300px;
-    }
-    
-    .project-content img{
-        width: 270px;
-    }
-
-    .project-content video{
-        width: 270px;
-    }
-
 }
 
-.project{
+body > .project{
+    scroll-snap-align: start;
+}
+
+.project {
     margin: 20px;
-    padding: 30px;
+    padding: 30px; 
 }
 
-.project-desc{
+.project-desc {
     font-size: 20px;
     color: white;
 }
 
-.projects-display{
-  margin: 50px 10px;
-  display: grid;
-  gap: 40px;
-  justify-content: center;
-  padding: 20px 60px;
+.projects-display {
+    margin: 50px 10px;
+    display: grid;
+    gap: 40px;
+    justify-content: center;
+    padding: 20px 60px;
 
-    
+
 }
-.project-content{
+
+.project-content {
     border: 2px white solid;
     border-radius: 10px;
     width: 350px;
     padding: 5px;
-    
+
 }
 
-.project-content img{
+.project-content img {
     object-fit: cover;
     width: 320px;
     height: 150px;
@@ -96,24 +104,39 @@
     border-radius: 10px;
 }
 
-.project-content h2{
+.project-content h2 {
     margin: 10px;
 }
 
-.project-content p{
+.project-content p {
     margin: 10px;
 }
 
-.project-content video{
+.project-content video {
     width: 320px;
     height: 150px;
     margin: 10px;
     border-radius: 10px;
 }
 
-@media(min-width: 770px){
-    .projects-display{
+@media(max-width: 770px) {
+    .project-content {
+        width: 300px;
+    }
+
+    .project-content img {
+        width: 270px;
+    }
+
+    .project-content video {
+        width: 270px;
+    }
+
+}
+
+@media(min-width: 770px) {
+    .projects-display {
         grid-template-columns: repeat(2, 0.05fr);
     }
-    
+
 }

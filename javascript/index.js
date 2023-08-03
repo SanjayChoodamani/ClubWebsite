@@ -1,3 +1,5 @@
+// gsap.registerPlugin(ScrollTrigger)
+
 var navIcon = document.getElementById('nav-icon1');
 var menu = document.querySelector(".menu-screen");
 
@@ -38,3 +40,19 @@ const loader = document.querySelector('.loader');
 window.addEventListener('load', function(){
   loader.style.display = 'none';
 })
+
+
+// gsap.to('.project-heading' ,{
+//   ScrollTrigger: {
+//     trigger: ".project",
+//     start: 'top 10px',
+//   },
+//   y:'-100vh'
+// })
+
+// gasp.to('.project',{
+//   ScrollTrigger: {
+//     trigger: ".project",
+//     start: 'top 10px',
+//   }
+// })

@@ -73,14 +73,15 @@
         bottom: 20%;
         transform: translate(-45%, -20%);
         font-size: 15px;
+        font-weight: bold;
     }
 
     .p2 {
         left: 49%;
-        bottom: 15%;
+        bottom: 17%;
         transform: translate(-45%, -15%);
         font-size: 15px;
-
+        font-weight: bold;
     }
 
     .enigma-heading i {

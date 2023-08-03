@@ -47,7 +47,7 @@ body::-webkit-scrollbar {
 }
 
 .hero {
-  height: 100vh;
+  height: 100dvh;
 }
 
 .nav-bar {
@@ -56,7 +56,7 @@ body::-webkit-scrollbar {
 }
 
 .logo img {
-  position: absolute;
+  position: fixed;
   left: 5%;
   top: 10px;
   height: 100px;
@@ -68,6 +68,8 @@ body::-webkit-scrollbar {
   position: absolute;
   right: 10%;
   top: 7%;
+  position: fixed;
+  z-index: 10;
 }
 
 .drop-down i {
@@ -150,9 +152,10 @@ body::-webkit-scrollbar {
   }
 
   .drop-down {
-    position: absolute;
+    position: fixed;
     right: 10%;
     top: 5%;
+    z-index: 10;
   }
 
   .menu-screen p {
@@ -166,9 +169,10 @@ body::-webkit-scrollbar {
 
 @media(max-width: 770px) {
   .drop-down {
-    position: absolute;
+    position: fixed;
     right: 10%;
     top: 4%;
+    z-index: 10;
   }
 
   .hero-section p {
@@ -271,7 +275,7 @@ body::-webkit-scrollbar {
   position: relative;
   overflow: hidden;
   width: 90vw;
-  height: 100vh;
+  height: 100dvh;
   margin: 0 auto;
 }
 
@@ -358,8 +362,9 @@ body::-webkit-scrollbar {
 video {
   object-fit: cover;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   z-index: -1;
+  opacity: 0.8;
 }
 
 .hidden {
@@ -381,7 +386,7 @@ video {
     font-size: 1rem;
   }
   .hero-section i {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   
 }
@@ -453,7 +458,7 @@ video {
   --angle: 90deg;
   --gradX: 100%;
   --gradY: 50%;
-  --c1: rgba(168, 239, 255, 1);
+  --c1: rgb(189, 189, 189);
   --c2: rgba(168, 239, 255, 0.1);
 }
 
@@ -517,7 +522,7 @@ video {
   height: 20vh;
   width: 100%;
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 0.75;
 }
 
 .boxes p {
@@ -700,7 +705,7 @@ hr {
 .loader {
   background-color: #0a0a0a;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   position: fixed;
   z-index: 100;
 }
