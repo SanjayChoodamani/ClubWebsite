@@ -48,6 +48,7 @@ body::-webkit-scrollbar {
 
 .hero {
   height: 100dvh;
+  scroll-snap-type: y mandatory;
 }
 
 .nav-bar {
@@ -737,5 +738,19 @@ hr {
 
   to {
     transform: scale(2);
+  }
+}
+
+.down {
+  animation: slide-down 0.75s infinite;
+}
+
+@keyframes slide-down{
+  from{
+      transform: translate(-50%, -3%) scale(1.0);
+
+  }
+  to{
+      transform: translate(-50%, -25%) scale(1.2);
   }
 }

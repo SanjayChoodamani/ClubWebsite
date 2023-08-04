@@ -42,6 +42,7 @@ window.addEventListener('load', function(){
 })
 
 
+
 // gsap.to('.project-heading' ,{
 //   ScrollTrigger: {
 //     trigger: ".project",
