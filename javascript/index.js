@@ -41,6 +41,7 @@ window.addEventListener('load', function(){
   loader.style.display = 'none';
 })
 
+document.querySelectorAll("#footer .icons a")[3].href = 'https://twitter.com/MalnadTechClub?t=BMoWx-9alMeyDXBC4-wX6Q&s=09'
 
 
 // gsap.to('.project-heading' ,{
