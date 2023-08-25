@@ -3,6 +3,8 @@
 var navIcon = document.getElementById('nav-icon1');
 var menu = document.querySelector(".menu-screen");
 
+
+
 navIcon.addEventListener('click', function () {
   navIcon.classList.toggle('open');
   if (menu.classList.contains('open')) {
@@ -41,8 +43,10 @@ window.addEventListener('load', function(){
   loader.style.display = 'none';
 })
 
-document.querySelectorAll("#footer .icons a")[3].href = 'https://twitter.com/MalnadTechClub?t=BMoWx-9alMeyDXBC4-wX6Q&s=09'
+document.querySelectorAll("#footer .icons a")[3].href = 'https://twitter.com/MalnadTechClub/'
 
+document.querySelector("#footer .phone-no a").href = 'tel:+916361034226'
+document.querySelector("#footer .phone-no a").innerHTML = '<i class="fa-solid fa-phone"></i> +91 6361034226'
 
 // gsap.to('.project-heading' ,{
 //   ScrollTrigger: {
@@ -58,3 +62,12 @@ document.querySelectorAll("#footer .icons a")[3].href = 'https://twitter.com/Mal
 //     start: 'top 10px',
 //   }
 // })
+
+// window.addEventListener('scroll', function() {
+//   if (window.scrollY > 0) {
+//       document.body.classList.add('scrolling');
+//   } else {
+//       document.body.classList.remove('scrolling');
+//   }
+// });
+
