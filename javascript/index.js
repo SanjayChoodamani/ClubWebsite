@@ -43,10 +43,14 @@ window.addEventListener('load', function(){
   loader.style.display = 'none';
 })
 
-document.querySelectorAll("#footer .icons a")[3].href = 'https://twitter.com/MalnadTechClub/'
-
-document.querySelector("#footer .phone-no a").href = 'tel:+916361034226'
-document.querySelector("#footer .phone-no a").innerHTML = '<i class="fa-solid fa-phone"></i> +91 6361034226'
+const loading = document.querySelectorAll(".team-card-1 img")
+for(i = 0; i<loading.length; i++ ){
+  loading[i].setAttribute('loading','lazy')
+}
+const Gallery = document.querySelectorAll(".gallery img")
+for(i = 0; i<Gallery.length; i++ ){
+  Gallery[i].setAttribute('loading','lazy')
+}
 
 // gsap.to('.project-heading' ,{
 //   ScrollTrigger: {
