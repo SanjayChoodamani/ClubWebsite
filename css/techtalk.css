@@ -35,16 +35,28 @@
 .right {
     z-index: 2;
     position: absolute;
-    top: 180px;
-    right: 30px;
+    top: 200px;
+    right: 10px;
     font-weight: bold;
+    width: 335px;
+    line-height: 50px;
+    padding: 0px 20px 0px 0px;
+    background-color: rgb(24, 24, 24);
+    text-align: right;
+    opacity: 0.9;
 }
 
 .left {
     z-index: 2;
     position: absolute;
-    top: 180px;
-    left: 30px;
+    top: 200px;
+    right: 10px;
     font-weight: bold;
+    width: 335px;
+    line-height: 50px;
+    padding: 0px 0px 0px 20px;
+    background-color: rgb(24, 24, 24);
+    text-align: left;
+    opacity: 0.9;
 
 }
