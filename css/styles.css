@@ -8,8 +8,12 @@
   src: url(/fonts/AvertaDemo-Regular.otf);
 }
 @font-face {
-  font-family: 'algerian';
-  src: url('/fonts/ALGER.ttf');
+  font-family: 'Algerian';
+  src: url('Algerian.woff2') format('woff2'),
+      url('Algerian.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @property --angle {
@@ -361,7 +365,7 @@ body.scrolling .header {
   font-size: 3.5rem;
   font-weight: 100;
   margin-bottom: 10px;
-  font-family: 'algerian';
+  font-family: 'Algerian';
   width: max-content;
 
 }
@@ -547,7 +551,7 @@ video {
   width: 100%;
   object-fit: cover;
   opacity: 0.75;
-  filter: blur(1.2px);
+  filter: blur(0.75px);
 }
 
 .boxes p {
