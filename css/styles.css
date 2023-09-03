@@ -9,8 +9,8 @@
 }
 @font-face {
   font-family: 'Algerian';
-  src: url('Algerian.woff2') format('woff2'),
-      url('Algerian.woff') format('woff');
+  src: url('/fonts/Algerian.woff2') format('woff2'),
+      url('/fonts/Algerian.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
