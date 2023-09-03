@@ -357,7 +357,7 @@ body.scrolling .header {
 
 .hero-section {
   color: white;
-  font-family: 'ag-light', sans-serif;
+  font-family: 'algerianregular', 'ag-light', sans-serif;
   position: absolute;
   top: 50%;
   left: 40%;
@@ -378,6 +378,7 @@ body.scrolling .header {
   font-size: 1.5rem;
   margin-bottom: 10px;
   font-weight: bold;
+  font-family: 'ag-light', sans-serif;;
 }
 
 .hero-section i {
