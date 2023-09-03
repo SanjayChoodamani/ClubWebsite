@@ -369,7 +369,7 @@ body.scrolling .header {
   font-size: 3.5rem;
   font-weight: 100;
   margin-bottom: 10px;
-  font-family: 'algerianregular';
+  font-family: 'algerianregular','ag-light', sans-serif;
   width: max-content;
 
 }
