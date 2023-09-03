@@ -1,11 +1,15 @@
 @font-face {
   font-family: 'ag-light';
-  src: url(./fonts/AG\ Foreigner\ Light-Plain\ Medium.ttf);
+  src: url(/fonts/AG\ Foreigner\ Light-Plain\ Medium.ttf);
 }
 
 @font-face {
   font-family: 'avetra';
-  src: url(./fonts/AvertaDemo-Regular.otf);
+  src: url(/fonts/AvertaDemo-Regular.otf);
+}
+@font-face {
+  font-family: 'algerian';
+  src: url(/fonts/ALGER.ttf);
 }
 
 @property --angle {
@@ -255,8 +259,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 25px;
   z-index: 3;
   animation: slideFromTop 0.5s forwards;
 }
@@ -356,14 +359,16 @@ body.scrolling .header {
 /*hero section styles*/
 .hero-section h1 {
   font-size: 3.5rem;
-  font-weight: bold;
-  margin-bottom: 5px;
+  font-weight: 100;
+  margin-bottom: 10px;
+  font-family: 'algerian';
+  width: max-content;
 
 }
 
 .hero-section p {
   font-size: 1.5rem;
-  margin-bottom: 4px;
+  margin-bottom: 10px;
 }
 
 .hero-section i {
@@ -381,6 +386,7 @@ video {
   height: 100dvh;
   z-index: -1;
   opacity: 0.8;
+  filter: blur(2px);
 }
 
 .hidden {
@@ -397,9 +403,11 @@ video {
 @media(max-width: 770px){
   .hero-section h1 {
     font-size: 2.5rem;
+    width: auto;
   }
   .hero-section p {
-    font-size: 1rem;
+    font-size: 1.25rem;
+    width: max-content;
   }
   .hero-section i {
     font-size: 1.5rem;
@@ -539,6 +547,7 @@ video {
   width: 100%;
   object-fit: cover;
   opacity: 0.75;
+  filter: blur(1.2px);
 }
 
 .boxes p {
