@@ -9,7 +9,7 @@
     width: 100%;
     height: 100dvh;
     object-fit: cover;
-    filter: blur(2px);
+    filter: blur(1px);
 }
 
 .project-heading h1 {
@@ -21,6 +21,7 @@
     bottom: 15%;
     transform: translate(-50%, -15%);
     z-index: 1;
+    font-size: 3rem;
 }
 
 .project-heading i {
@@ -52,10 +53,11 @@
         object-fit: cover;
     }
 
-    .project-headingh1 {
+    .project-heading h1 {
         left: 50%;
-        bottom: 25%;
-        transform: translate(-50%, -25%);
+        bottom: 13%;
+        transform: translate(-50%, -13%);
+        font-size: 2rem;
     }
 
 
@@ -139,7 +141,7 @@ body > .project{
 
 @media(min-width: 770px) {
     .projects-display {
-        grid-template-columns: repeat(2, 0.05fr);
+        grid-template-columns: repeat(3, 0.05fr);
     }
 
 }

@@ -12,7 +12,14 @@
     color: aqua;
     font-size: 3rem;
 }
-
+.club-conveners .allign{
+    justify-content: left;
+}
+@media (max-width: 770px) {
+    .club-conveners .allign{
+        justify-content: center;
+    }
+}
 .members {
     margin: 20px;
 }
@@ -66,6 +73,7 @@
     display: grid;
     gap: 20px 40px;
     justify-content: center;
+
 }
 
 .team-card-1 p {
@@ -95,7 +103,7 @@
 
 @media (min-width: 770px) {
     .allign {
-        
+        justify-content: left;
         grid-template-columns: repeat(5, 0fr);
     }
 }

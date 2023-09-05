@@ -52,6 +52,9 @@ for(i = 0; i<Gallery.length; i++ ){
   Gallery[i].setAttribute('loading','lazy')
 }
 
+const foot = document.querySelector(".contact a")
+foot.href = './contact.html'
+
 // gsap.to('.project-heading' ,{
 //   ScrollTrigger: {
 //     trigger: ".project",

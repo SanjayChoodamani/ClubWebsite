@@ -33,6 +33,7 @@
     bottom: 20%;
     transform: translate(-50%, -20%);
     z-index: 1;
+    font-size: 3rem;
 }
 
 .p1 {
@@ -45,50 +46,34 @@
     transform: translate(-50%, -15%);
     z-index: 1;
     font-size: 20px;
-}
-
-.p2 {
-    color: white;
-    font-family: 'ag-light', sans-serif;
-    display: inline;
-    position: absolute;
-    left: 50%;
-    bottom: 11%;
-    transform: translate(-50%, -11%);
-    z-index: 1;
-    font-size: 20px;
+    width: max-content;
+    font-weight: bold;
 }
 
 @media(max-width: 770px) {
-    .enigma-heading img{
-        object-fit: cover;
-    }
+
     .enigma-heading h1 {
         left: 50%;
-        bottom: 25%;
-        transform: translate(-50%, -25%);
+        bottom: 17%;
+        transform: translate(-50%, -17%);
     }
 
     .p1 {
         left: 49%;
-        bottom: 20%;
-        transform: translate(-45%, -20%);
-        font-size: 15px;
+        bottom: 13%;
+        transform: translate(-45%, -13%);
+        font-size: 20px;
         font-weight: bold;
     }
 
-    .p2 {
-        left: 49%;
-        bottom: 17%;
-        transform: translate(-45%, -15%);
-        font-size: 15px;
-        font-weight: bold;
-    }
 
     .enigma-heading i {
         left: 50%;
         bottom: 3%;
         transform: translate(-50%, -3%);
+    }
+    .event-desc h2{
+        font-size: 2rem;
     }
 
 }
