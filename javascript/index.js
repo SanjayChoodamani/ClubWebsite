@@ -55,6 +55,8 @@ for(i = 0; i<Gallery.length; i++ ){
 const foot = document.querySelector(".contact a")
 foot.href = './contact.html'
 
+const copy = document.querySelector(".copyright p").innerHTML = `Copyright <a href="#"><i class="fa-regular fa-copyright"></i></a> The Malnad Technical Club🚀.`
+
 // gsap.to('.project-heading' ,{
 //   ScrollTrigger: {
 //     trigger: ".project",
